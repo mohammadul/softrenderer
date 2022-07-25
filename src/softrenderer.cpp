@@ -224,7 +224,7 @@ SOFTRENDERER_API int sr_mesh_render_persp(MESH m, std::vector<FLOATDATA>& depthm
             x[i] = fw-f*mvc->x/mvc->z;
             y[i] = fh+f*mvc->y/mvc->z;
             //if(x[i]<0.0||y[i]<0.0||x[i]>=w||y[i]>=h) // this is valid only when sufficiently sampled
-            if(x[i]<-w/4||y[i]<-h/4||x[i]>=(5*w)/4||y[i]>=(5*h)/4)
+            if(x[i]<-(3*w)/4||y[i]<-(3*h)/4||x[i]>=(7*w)/4||y[i]>=(7*h)/4)
             {
                 x[i] = std::numeric_limits<FLOATDATA>::quiet_NaN();
                 y[i] = std::numeric_limits<FLOATDATA>::quiet_NaN();
@@ -418,7 +418,7 @@ SOFTRENDERER_API int sr_mesh_render_ortho(MESH m, std::vector<FLOATDATA>& depthm
             x[i] = fw+g*mvc->x;
             y[i] = fh-g*mvc->y;
             //if(x[i]<0.0||y[i]<0.0||x[i]>=w||y[i]>=h) // this is valid only when sufficiently sampled
-            if(x[i]<-w/4||y[i]<-h/4||x[i]>=(5*w)/4||y[i]>=(5*h)/4)
+            if(x[i]<-(3*w)/4||y[i]<-(3*h)/4||x[i]>=(7*w)/4||y[i]>=(7*h)/4)
             {
                 x[i] = std::numeric_limits<FLOATDATA>::quiet_NaN();
                 y[i] = std::numeric_limits<FLOATDATA>::quiet_NaN();
