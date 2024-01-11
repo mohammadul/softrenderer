@@ -3,7 +3,7 @@
 A simple software-based rendering library written in C++.
 
 Adapted from https://www.sunshine2k.de/coding/java/TriangleRasterization/TriangleRasterization.html          
-Copyright (c) 2021 Bastian Molkenthin 
+Copyright (c) 2023 Bastian Molkenthin 
 
 ## Build   
 
